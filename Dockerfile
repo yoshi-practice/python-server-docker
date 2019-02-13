@@ -14,4 +14,4 @@ RUN apk update && \
 
 EXPOSE 8080
 
-CMD ["python3", "main.py"]
+CMD ["python3", "main.py;", "python", "-m", "http.server 8080;", "open", "http://localhost:8080/"]
