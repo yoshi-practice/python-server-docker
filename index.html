@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <p>Hello World!</p>
+    <script>
+      var req = new XMLHttpRequest();
+      req.open('GET', 'http://localhost:3000/');
+      req.onreadystatechange = function() {
+        if (req.readyState == 4 && req.status == 200) {
+          console.log(req.responseText);
+        }
+      };
+      req.send(null);
+      </script>
+  </body>
+</html>
