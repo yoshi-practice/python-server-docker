@@ -3,13 +3,17 @@ This is a simple server developed by python and docker .
 
 ---
 
-## Build and Run
+## How to run ?
+
+### Local
 
 ```
 $ python app.py
 $ python -m http.server 8080
 $ open http://localhost:8080/
 ```
+
+### Docker
 
 ```
 $ docker build -t py-server .
