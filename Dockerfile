@@ -10,10 +10,8 @@ RUN apk update && \
     apk add fish \
             vim  \
             git  \
-            bash && \
-    pip3 install --upgrade pip && \
-    pip3 install -r requirements.txt
+            bash
 
-EXPOSE 5000 8080
+EXPOSE 8080
 
 CMD ["python3", "main.py"]
